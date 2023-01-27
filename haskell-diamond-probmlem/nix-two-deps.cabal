@@ -1,0 +1,18 @@
+cabal-version:      3.0
+name:               nix-two-deps
+version:            0.1.0.0
+license:            NONE
+build-type:         Simple
+
+common warnings
+    ghc-options: -Wall
+
+executable nix-two-deps
+    import:           warnings
+    main-is:          Main.hs
+    build-depends:
+        base,
+        foo,
+        bar,
+    hs-source-dirs:   app
+    default-language: Haskell2010
